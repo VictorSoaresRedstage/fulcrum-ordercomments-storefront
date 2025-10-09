@@ -85,10 +85,6 @@ import{c as ce,r as ie}from"./chunks/requestGuestOrderCancel.js";import{s as f,f
 `,B=`
   mutation PLACE_ORDER_MUTATION($cartId: String!) {
     placeOrder(input: { cart_id: $cartId }) {
-      errors {
-        code
-        message
-      }
       orderV2 {
         ...PLACE_ORDER_FRAGMENT
       }
